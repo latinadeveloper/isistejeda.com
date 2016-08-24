@@ -1,0 +1,82 @@
+
+body{
+	font-family: 'Didact Gothic', sans-serif;
+}
+section{
+	height:100vh;
+}
+
+#my-navbar {
+	margin-right: 40%;
+}
+
+#my-navbar a{
+	color:black;
+	font-size: 1.5em;
+
+}
+
+.social {
+	display: i
+}
+
+#my-navbar li{
+	background-color: white;
+}
+
+#my-navbar a:hover {
+	color: purple;
+}
+
+#about{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color:pink;
+
+}
+
+#projects{	
+	background-color:yellow;	
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+#projects h2 {
+	width: 100%;
+	background-color:orange;
+	text-align: center;
+
+}
+
+
+#projects div{
+	flex-basis: 20%;
+	min-height: 20vh;
+	background-color: blue;
+	margin: 2em;
+	flex-grow: 4;
+}
+
+#projects div img {
+	display: block;
+	width: 100%;
+}
+
+.initials {
+	display:inline-block;
+	font-size:3em;
+	margin-right: .25em;
+}
+
+footer {
+	text-align: center;
+	padding: 1em;
+}
+
+
+
+
+
+
