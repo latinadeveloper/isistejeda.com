@@ -8,6 +8,7 @@ section{
 
 #my-navbar {
 	margin-right: 40%;
+
 }
 
 #my-navbar a{
@@ -17,11 +18,16 @@ section{
 }
 
 .social {
-	display: i
+
+}
+
+#social-nav a{
+	color:black;
+
 }
 
 #my-navbar li{
-	background-color: white;
+	
 }
 
 #my-navbar a:hover {
@@ -53,21 +59,32 @@ section{
 
 #projects div{
 	flex-basis: 20%;
-	min-height: 20vh;
+	height: 20vh;
 	background-color: blue;
 	margin: 2em;
-	flex-grow: 4;
+
+	font-size: 2em;
 }
 
 #projects div img {
 	display: block;
+	object-fit: cover;
+	height: 40vh;
 	width: 100%;
+	
 }
 
 .initials {
 	display:inline-block;
 	font-size:3em;
 	margin-right: .25em;
+}
+
+#resources h2 {
+	width: 100%;
+	background-color:green;
+	text-align: center;
+
 }
 
 footer {
