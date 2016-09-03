@@ -1,0 +1,3 @@
+#!/bin/sh
+
+rsync -va . isistejeda.com:/var/www/isistejeda.com/htdocs/
