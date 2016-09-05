@@ -1,3 +1,5 @@
 #!/bin/sh
 
+cd /Users/isis/Documents/isistejeda.com
+
 rsync -va --exclude .git . isistejeda.com:/var/www/isistejeda.com/htdocs/
