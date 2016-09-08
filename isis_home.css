@@ -1,9 +1,15 @@
+a:hover,
+a:focus {
+  color: #23527c;
+  text-decoration: none;
+	}
 
 body{
 	font-family: 'Lato', sans-serif;
 	color: #F1F1F1;
 	/*font-family: 'Didact Gothic',  sans-serif;*/
 }
+
 section{
 	min-height: 100vh;
 }
@@ -19,13 +25,11 @@ h2{
 #my-navbar {
 	margin-right: 40%;
 	color: #005555;
-
 }
 
 #my-navbar a{
 	color: black;
 	font-size: 1.5em;
-
 }
 
 
@@ -35,12 +39,8 @@ h2{
 
 #social-nav a:hover{
 	color: #ff4c8d;
-
 }
 
-#my-navbar li{
-	
-}
 
 #my-navbar a:hover {
 	color: #ff4c8d;
@@ -52,7 +52,6 @@ h2{
 	align-items: center;
 	background-image: url('about_2_back.svg');
 	background-size: cover;
-
 }
 
 #about{
@@ -60,11 +59,7 @@ h2{
 	justify-content: center;
 	align-items: center;
 	color:black;
-
 }
-
-
-
 
 #projects{
 	background-color: white;
@@ -81,11 +76,12 @@ h2{
 	width: 100%;
 	text-align: center;
 }
+
 #projects h3{
 	font-size: 1.2em;
 	margin: .2em;
+	color: black;
 }
-
 
 #projects div {
 	flex-basis: 10em;
@@ -95,8 +91,15 @@ h2{
 	font-size: 1.2em;
 	text-align: center;
 	color: black;
-	background-color: #B2B09B;
+	background-color: white;
+    transition: transform .5s ease;
+}
 
+
+#projects div:hover {
+      transform: scale(1.05); 
+
+        
 }
 
 @media (max-width: 65em) {
@@ -134,9 +137,3 @@ footer {
 	padding: 1em;
 	color: black;
 }
-
-
-
-
-
-
