@@ -15,13 +15,18 @@ section{
 }
 
 h1{
-	color: #665B4E;
+	color: white;
 	font-size: 3em;
 }
 h2{
-	color: #FF2079;
+	color: lightpink;
 	font-size: 2em;
 }
+
+.navbar {
+	background-color: white;
+}
+
 #my-navbar {
 	margin-right: 40%;
 	color: #005555;
@@ -38,19 +43,19 @@ h2{
 }
 
 #social-nav a:hover{
-	color: #ff4c8d;
+	color: darkturquoise;
 }
 
 
 #my-navbar a:hover {
-	color: #ff4c8d;
+	color: darkturquoise;
 }
 
 #about{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url('about_2_back.svg');
+	background-image: url('about_2_back3.jpg');
 	background-size: cover;
 }
 
@@ -70,11 +75,13 @@ h2{
 	justify-content: center;
 	align-items: stretch;
 	padding: 2em;
+	
 }
 
 #projects h2 {
 	width: 100%;
 	text-align: center;
+	color: yellowgreen;
 }
 
 #projects h3{
@@ -125,12 +132,20 @@ h2{
 
 }
 
-#resources h2 {
-	width: 100%;
-	background-color:green;
+.modalNav{
+	background-color: white;
 	text-align: center;
-
+	margin-top: 1em;
 }
+
+.modalContent {
+	background-color: gainsboro;
+	margin: 4em;
+	margin-top: 1em;
+	color:black;
+	padding: 2em;
+}
+
 
 footer {
 	text-align: center;

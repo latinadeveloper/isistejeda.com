@@ -40,7 +40,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <div class="initials nav navbar-nav navbar-left"><img src="initials_it.svg"></div>
+        <div class="initials nav navbar-nav navbar-left"> <a href="#about"><img src="initials_it.svg"></a></div>
       </div>
 
 
@@ -58,7 +58,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#projects">PROJECTS</a></li>        
-          <li><a href="/blog">BLOG</a></li>
+          <li><a href="http://latinadeveloper.com">BLOG</a></li>
 <!--           <li><a href="#blog">resources</a></li> -->
         </ul>
       </div>
@@ -74,47 +74,62 @@
     <div>
 
       <h1>Isis Tejeda</h1>
-      <h2>Front-End Developer </h2> 
-      <!-- &amp; UI Design -->
+      <h2>Multi Diciplinary Front-End Developer  
+       <!-- &amp; UI Design  --></h2>
     </div>
   </section>
 
   <section id="projects">
-      <h2>Projects</h2>
+      <h2>Design</h2>
 
 
-    <div> <a id="postcardModalAnchor" href="#postcardModal"><img  src="postcard_cover1.jpg">
-    <h3>Post Card </h3></a> 
+    <div> <a id="juanesModalAnchor" href="#juanesModal"><img  src="juanes_besier_01.jpg">
+    <h3>Cover </h3></a> 
     </div>
 
     <div><img src="type_display.jpg">
     <h3>Type Display</h3>
-    in design icon here
-   </div> 
+    </div> 
+
     <div><img src="self_portrait_eyes.jpg">
     <h3>Te Veo</h3>
     </div> </div> 
  
   </section>
 
-<div id="postcardModal">
-        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-        <div class="close-postcardModal"> 
-            CLOSE MODAL
+<div id="juanesModal"> <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-juanesModal modalNav"> 
+          <img src="cancel.png">
         </div>
             
-        <div class="modal-content">
-                  <!--Your modal content goes here-->
+        <div class="modal-content modalContent">
+                  The description willbe here
+                  <row> 
+                  <img  src="juanes_besier_01.jpg"></row>
+
+                  wfofdjq
+
         </div>
     </div>
-<!--   <section id="resources">
-    <h2>Resources</h2>
-    <div>
-      
-    </div>
-  </section> -->
+
+<!-- <div id="typeDisplayModal"> <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <!-- <div class="close-typeDisplayModal modalNav"> 
+          <img src="cancel.png">
+        </div>
+            
+        <div class="modal-content modalContent">
+                  The description willbe here
+                  <row> 
+                  <img src="juanes_besier_01.jpg"></row>
+
+                  wfofdjq
+
+        </div>
+    </div> --> 
 
 
+  
+</nav>
 
 
   <footer>
@@ -125,9 +140,11 @@
 
 
 
-  <script src="js/animatedModal.min.js"></script>
+
+<!-- a new one is to be created for each modal -->
+  <script src="js/animatedModal.min.js"></script> 
   <script>
-  $("#postcardModalAnchor").animatedModal({ modalTarget: 'postcardModal' });
+  $("#juanesModalAnchor").animatedModal({ modalTarget: 'juanesModal' });
   </script>
 
 </body>
