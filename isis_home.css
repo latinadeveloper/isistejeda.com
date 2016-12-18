@@ -1,3 +1,4 @@
+
 a:hover,
 a:focus {
   color: #23527c;
@@ -16,12 +17,24 @@ section{
 
 h1{
 	color: white;
-	font-size: 3em;
+	font-size: 4em;
+	text-align: center;
 }
 h2{
-	color: lightpink;
+	color: magenta;
 	font-size: 2em;
 }
+
+h3{
+	text-decoration: none;
+}
+p:first-letter {
+    color: #E56717;
+    font-size: xx-large;
+    font-family: 'Pacifico', cursive;
+
+}
+
 
 .navbar {
 	background-color: white;
@@ -55,19 +68,19 @@ h2{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url('about_2_back3.jpg');
+	background-image: url('images/about_2_back3.jpg');
 	background-size: cover;
 }
 
-#about{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color:black;
+#about h2{
+	color: yellow;
+	font-family: Pacifico;
+	text-align: center;
 }
 
 #projects{
-	background-color: white;
+	background-color: #E38AAE
+;
 	font-size: .9em;
 	display: flex;
 	flex-wrap: wrap;
@@ -81,7 +94,8 @@ h2{
 #projects h2 {
 	width: 100%;
 	text-align: center;
-	color: yellowgreen;
+	color: black;
+	font-size: 3em;
 }
 
 #projects h3{
@@ -129,26 +143,31 @@ h2{
 
 .initials img {
 	width: 3em;
+}
 
+.modal-content{
+	background-color: white;
+}
+
+.modalImage {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	display: block;
 }
 
 .modalNav{
 	background-color: white;
 	text-align: center;
 	margin-top: 1em;
+
 }
 
 .modalContent {
-	background-color: gainsboro;
-	margin: 4em;
-	margin-top: 1em;
-	color:black;
-	padding: 2em;
-}
-
-
-footer {
-	text-align: center;
-	padding: 1em;
 	color: black;
+	margin-top: 1em;
+	margin: 4em;
+	padding: 2em;	
 }
+	

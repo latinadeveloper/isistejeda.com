@@ -10,11 +10,12 @@
 
 
   <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css?family=Josefin+Slab|Lato|Didact+Gothic">
+        href="https://fonts.googleapis.com/css?family=Josefin+Slab|Lato|Didact+Gothic|Pacifico">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/png" href="images/isisicon.png" />
 
   
 <link rel="stylesheet" type="text/css"
@@ -40,17 +41,19 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <div class="initials nav navbar-nav navbar-left"> <a href="#about"><img src="initials_it.svg"></a></div>
+        <div class="initials nav navbar-nav navbar-left"> <a href="#about"><img src="images/isisicon.png"></a></div>
       </div>
 
 
       <div class="collapse navbar-collapse navbar-right" id="social-nav"  >
         <ul class="social nav navbar-nav">
 
-          <li><a  href="https://twitter.com/IsisPieces" target='_blank' class="btn btn-social-icon btn-lg btn-twitter"><i class="fa fa-twitter"></i></a></li>
-          <li><a class="btn btn-social-icon btn-lg btn-linkedin"><i class="fa fa-linkedin"></i></a></li>        
-          <li><a class="btn btn-social-icon btn-lg facebook"><i class="fa fa-facebook"></i></a></li>
+          <li><a  href="https://twitter.com/latinadeveloper" target='_blank' class="btn btn-social-icon btn-lg btn-twitter"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="Public Profilehttps://www.linkedin.com/in/isistejeda" target='_blank' class="btn btn-social-icon btn-lg btn-linkedin"><i class="fa fa-linkedin"></i></a></li>        
+          <li><a href="https://www.facebook.com/profile.php?id=100007372127070" target='_blank' class="btn btn-social-icon btn-lg facebook"><i class="fa fa-facebook"></i></a></li>
         </ul>
+
+        
       </div>
 
 
@@ -79,56 +82,37 @@
     </div>
   </section>
 
-  <section id="projects">
-      <h2>Design</h2>
-
-
-    <div> <a id="juanesModalAnchor" href="#juanesModal"><img  src="juanes_besier_01.jpg">
-    <h3>Cover </h3></a> 
+<section id="projects">
+  <h2>Projects</h2>
+    <div> <a id="dianeModalAnchor" href="#dianeModal"><img  src="images/dianeAfter.png">
+    </a> 
     </div>
 
-    <div><img src="type_display.jpg">
-    <h3>Type Display</h3>
+    <div><a href="http://www.isistejeda.com/collum/" target="_blank"><img src="images/collumtreethumbnail.jpg">
+    </a>
     </div> 
 
-    <div><img src="self_portrait_eyes.jpg">
-    <h3>Te Veo</h3>
-    </div> </div> 
- 
-  </section>
-
-<div id="juanesModal"> <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-        <div class="close-juanesModal modalNav"> 
-          <img src="cancel.png">
-        </div>
-            
-        <div class="modal-content modalContent">
-                  The description willbe here
-                  <row> 
-                  <img  src="juanes_besier_01.jpg"></row>
-
-                  wfofdjq
-
-        </div>
+    <div><a href="http://www.wigglesthengiggles.com" target="_blank"><img src="images/wigglesthengigglesthumbnail.jpg"></a>
     </div>
+    
 
-<!-- <div id="typeDisplayModal"> <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-        <!-- <div class="close-typeDisplayModal modalNav"> 
-          <img src="cancel.png">
+</section>
+
+<div id="dianeModal"> <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal"-->
+       <div class="close-dianeModal modalNav"> 
+          <img src="images/cancel.png">
         </div>
             
         <div class="modal-content modalContent">
-                  The description willbe here
-                  <row> 
-                  <img src="juanes_besier_01.jpg"></row>
-
-                  wfofdjq
-
+                  <p >This is a before and after project. The development process also involves design and as time passes websites need to be updated to continue to provide quality service to your clients. Below is the before image. The previous website used tables, drop shadows and was non responsive</p>
+                  
+                  <img class="modalImage" src="images/dianeBefore.png">
+                  <p>To give this website a quick makeover it was converted to a single page site. Each section covers the main components of their service and the use of icons is incorporated to transmit the information in a quicker way. </p>
+                  <a href="http://www.isistejeda.com/diane/" target="_blank"> <img class="modalImage" src="images/dianeAfter.png"> </a>
         </div>
-    </div> --> 
+    </div>  
 
 
-  
 </nav>
 
 
@@ -144,7 +128,7 @@
 <!-- a new one is to be created for each modal -->
   <script src="js/animatedModal.min.js"></script> 
   <script>
-  $("#juanesModalAnchor").animatedModal({ modalTarget: 'juanesModal' });
+  $("#dianeModalAnchor").animatedModal({ modalTarget: 'dianeModal' });
   </script>
 
 </body>
