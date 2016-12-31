@@ -1,81 +1,65 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title>Kionami</title>
     <style>
-     body {
-     	text-align: center;	
-     }
+      body {
+        text-align: center;
+      }
 
-     div {
-       border: 1px dotted pink;
-       padding: 4em;
-       min-height: 12px;
-       text-align: center;
-       margin: 0 4em;
-     
-     }
+      div {
+        padding: 4em;
+        min-height: 12px;
+        text-align: center;
+        margin: 0 4em;
+      }
+      
+      img {
+        display: none;
+      }
+      img.show {
+        display: block;
+      }
     </style>
   </head>
 
   <body>
-    <main id="main">do Kionami Code to see</main>
-
-    <br />
+    <main id="main">Kionami Code to see Mimis</main>
 
     <div>
-      <label></label><input />
-    </div>
-
-    <br />
-
-    <div>
-     
+    	<img src="Mimis Kionami.jpg">
     </div>
   </body>
 </html>
 
 <script>
-const input = document.querySelector('input')
+const input = document.body
 
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
 var index = 0
- 
+
 input.addEventListener('keydown', function(e) {
    const key = parseInt(e.detail || e.which)
 
   if (key === code[index]) {
   	index++
-
 	console.log('yey')
-	if (index === code.length){
-		alert("done")
-		index = 0
+
+	if (index === code.length) {
+    // code fully entered
+	  const image = document.querySelector('img')
+    image.className = "show"
+	  index = 0
 	}
+  } else {
+  	index = 0
   }
-  	else {
-  		index = 0
-  	}
+  e.preventDefault()
 })
 
 
 
 
 </script>
-
-
-
-<!-- Practice to get the hang of it
-
-
-
-vents listened to, but other common events are change, 'keydown', 'keyup', 'load', 'mouseover', 'mouseout' 
-
-
-add an event listener, how different event triggers work, and how to intercept user interactions with
-e.preventDefault() and e.stopPropagation().
-
-
-
- -->
