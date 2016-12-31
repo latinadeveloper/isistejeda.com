@@ -4,31 +4,47 @@
 
     <title>Kionami</title>
     <style>
-      body {
-        text-align: center;
+      div {
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        width: 70%;
       }
 
-      div {
-        padding: 4em;
-        min-height: 12px;
-        text-align: center;
-        margin: 0 4em;
-      }
-      
       img {
-        display: none;
+        /*display: none;*/
+        width: 100%;
       }
       img.show {
         display: block;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      td {
+        border: thin solid blue;
+      }
+
+      table {
+        position: absolute;
+        width: 100%;
+
       }
     </style>
   </head>
 
   <body>
-    <main id="main">Kionami Code to see Mimis</main>
+    <h1>Kionami Code to see Mimis</h1>
 
     <div>
+      <table>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+      </table>
     	<img src="Mimis Kionami.jpg">
+
     </div>
   </body>
 </html>
@@ -56,7 +72,7 @@ input.addEventListener('keydown', function(e) {
   } else {
   	index = 0
   }
-  e.preventDefault()
+  // e.preventDefault()
 })
 
 
