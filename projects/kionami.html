@@ -71,42 +71,36 @@
     </div>
 
     <h2 id="meow">MEOW</h2>
+
+    <script>
+      //            ^   ^   v   v   <   >   <   >   B   A
+      const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
+
+      var index = 0
+
+      document.body.addEventListener('keydown', function(e) {
+         const key = parseInt(e.detail || e.which)
+
+        if (key === code[index]) {
+      	  console.log('yey')
+          const tile = document.getElementById(index)
+          if (tile)
+            tile.className = "show"
+
+          index++
+
+        	if (index === code.length) {
+            // code fully entered
+            const meow = document.getElementById('meow')
+            meow.className = "show"
+        	  index = 0
+        	}
+
+          e.preventDefault()
+        } else {
+        	index = 0
+        }
+      })
+    </script>
   </body>
 </html>
-
-<script>
-const input = document.body
-
-//            ^   ^   v   v   <   >   <   >   B   A
-const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
-
-var index = 0
-
-input.addEventListener('keydown', function(e) {
-   const key = parseInt(e.detail || e.which)
-
-  if (key === code[index]) {
-	  console.log('yey')
-    const tile = document.getElementById(index)
-    if (tile)
-      tile.className = "show"
-
-    index++
-
-  	if (index === code.length) {
-      // code fully entered
-      const meow = document.getElementById('meow')
-      meow.className = "show"
-  	  index = 0
-  	}
-
-    e.preventDefault()
-  } else {
-  	index = 0
-  }
-})
-
-
-
-
-</script>
